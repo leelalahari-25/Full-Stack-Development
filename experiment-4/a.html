@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Selector Forms</title>
+    <style>
+        p {
+            color: blue;
+        }
+        #heading {
+            color: red;
+        }
+        .box {
+            background-color: lightgreen;
+        }
+        h2, h3 {
+            color: purple;
+        }
+        * {
+            font-family: Arial;
+        }
+        div p {
+            color: orange;
+        }
+        div > span {
+            color: green;
+        }
+        h4 + p {
+            color: brown;
+        }
+        h5 ~ p {
+            color: darkblue;
+        }
+        a:hover {
+            color: red;
+        }
+
+        input:focus {
+            background-color: yellow;
+        }
+        p::first-letter {
+            font-size: 25px;
+            color: red;
+        }
+
+        p::before {
+            content: "★ ";
+        }
+        input[type="text"] {
+            border: 2px solid blue;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1 id="heading">CSS Selector Forms</h1>
+
+    <h2>Simple Selectors</h2>
+
+    <p>This is an element selector.</p>
+
+    <p class="box">This is a class selector.</p>
+
+    <h3>This is a group selector.</h3>
+
+
+    <h2>Combinator Selectors</h2>
+
+    <div>
+        <p>Descendant selector</p>
+        <span>Child selector</span>
+    </div>
+
+    <h4>Heading</h4>
+    <p>Adjacent sibling selector</p>
+
+    <h5>Heading</h5>
+    <p>General sibling selector</p>
+    <p>Another sibling</p>
+
+
+    <h2>Pseudo-class Selector</h2>
+
+    <a href="#">Move mouse over this link</a>
+
+    <br><br>
+
+    <input type="text" placeholder="Click here">
+
+
+    <h2>Pseudo-element Selector</h2>
+
+    <p>This paragraph uses pseudo-elements.</p>
+
+
+    <h2>Attribute Selector</h2>
+
+    <input type="text" placeholder="Text box">
+
+</body>
+</html>
